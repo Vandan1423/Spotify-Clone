@@ -1,0 +1,441 @@
+* {
+        margin: 0;
+        padding: 0;
+        font-family: "Montserrat", sans-serif;
+        overflow: hidden;
+}
+.main {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        padding: 0.5rem;
+        background-color: black;
+}
+.nav-bar {
+        background-color: inherit;
+        height: 3rem;
+        padding: 0.5rem;
+        padding-top: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+}
+.content {
+        flex: 1;
+        display: flex;
+        flex-wrap: nowrap;
+}
+.side-bar {
+        background-color: rgb(18, 18, 18);
+        width: 25.25rem;
+        margin: 0rem 0.5rem 0rem 0rem;
+        border-radius: 1rem;
+}
+.main-content {
+        background: linear-gradient(
+                to bottom,
+                rgb(31, 31, 31) ,
+                rgb(18, 18, 18) 8rem,
+                rgb(18, 18, 18) 100%
+        );
+        flex: 1;
+        overflow-y: scroll;
+        margin: 0rem 0rem 0.5rem 0rem;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        border-radius: 1rem;
+}
+.music-player {
+        background-color: #000;
+        height: 4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 0.5rem;
+        align-items: center;
+        padding-bottom: 0.5rem;
+        /* padding-top: 0.8rem; */
+}
+.nav-bar .nav-left {
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex: 1;
+        padding-right: 6rem;
+}
+.nav-bar .spotify-logo{
+    justify-self: flex-start;
+    position: absolute;
+    left: 1.5rem;
+}
+.nav-bar .spotify-logo img {
+        height: 2.4rem;
+        width: 2.4rem;
+        padding-right: 0.7rem;
+        cursor: pointer;
+}
+.nav-bar .home-icon {
+        background-color: rgb(31, 31, 31);
+        height: 3rem;
+        width: 3rem;
+        border-radius: 50%;
+        font-size: 1.3rem;
+        margin-right: 0.7rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgba(255, 255, 255, 0.7);
+}
+.nav-bar .home-icon:hover{
+    transform: scale(1.03);
+    color: rgba(255, 255, 255, 0.93);
+}
+.nav-bar .home-icon i {
+        padding: 0.75rem;
+        cursor: pointer;
+}
+.nav-bar .search-box {
+        display: flex;
+        color: rgba(255, 255, 255, 0.7);
+        background-color: rgb(31, 31, 31);
+        width: 29.625rem;
+        border-radius: 2rem;
+        border-top-right-radius: 2rem;
+        justify-content: flex-start;
+        align-items: center;
+}
+.nav-bar .search-box:hover{
+    background-color: rgb(42, 42, 42);
+}
+.nav-bar #search-area {
+        background-color: inherit;
+        width: 22.625rem;
+        height: 100%;
+        border: none;
+        border-radius: 2rem;
+        color: rgba(255, 255, 255, 0.7);
+        outline: none;
+        padding: 0.94rem 0rem 1.16rem 2rem;
+        font-weight: 400;
+}
+.nav-bar .search-box .search-icon {
+       padding-left: 1.5rem;
+        align-self: center;
+        justify-self: start;
+        transform: scale(1.2) translateY(0.1rem);
+}
+.nav-bar .search-box .search-icon i:hover{
+        cursor: pointer;
+        color: rgba(255, 255, 255, 0.93);
+}
+.nav-bar .nav-right {
+        display: flex;
+        height: 100%;
+        justify-content: flex-end;
+        align-items: center;
+}
+.nav-bar .nav-right .explore-premium-btn{
+    width: 10rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.nav-bar .nav-right .explore-premium-btn button {
+        border-radius: 2rem;
+        padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+        border: none;
+        font-weight: bold;
+}
+.nav-bar .nav-right .explore-premium-btn button:hover{
+    transform: scale(1.04);
+}
+.nav-bar .nav-right .install-app-btn button {
+        color: white;
+        background-color: inherit;
+        border-radius: 2rem;
+        padding: 0.25rem 1rem 0.25rem 1rem;
+        border: none;
+        font-weight: bold;
+}
+.nav-bar .nav-right .install-app-btn button:hover{
+    transform: scale(1.04);
+    cursor: pointer;
+}
+.nav-bar .nav-right .notification-icon {
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 1.2rem;
+        padding: 0.5rem;
+        margin-right: 1rem;
+}
+.nav-bar .nav-right .notification-icon:hover{
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.93);
+    transform: scale(1.1);
+}
+.nav-bar .nav-right .user-icon {
+        background-color: rgb(31, 31, 31);
+        border-radius: 50%;
+        font-weight: bold;
+        height: 2.4rem;
+        width: 2.4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+.nav-bar .nav-right .user-icon:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.nav-bar .nav-right .user-icon .user-first-letter {
+        background-color: rgb(229, 122, 179);
+        border-radius: 50%;
+        width: 1.7rem;
+        height: 1.7rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+.content .side-bar .library {
+        display: flex;
+        color: white;
+        justify-content: space-between;
+        padding: 0.75rem 1rem 0.75rem 1rem;
+        align-items: center;
+}
+.library .lib-left {
+        display: flex;
+        width: 8rem;
+        justify-content: space-between;
+        opacity: 0.7;
+        transition-duration: 200ms;
+}
+.library .lib-left:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.library .lib-left img {
+        height: 1.25rem;
+        width: 1.25rem;
+}
+.library .lib-right {
+        display: flex;
+}
+.library .lib-right .plus-icon {
+        padding: 1rem;
+        opacity: 0.7;
+        transition-duration: 200ms;
+}
+.library .lib-right .plus-icon:hover{
+    opacity: 1;
+    transform: scale(1.03);
+}
+.library .lib-right .arrow-icon {
+        padding: 1rem;
+        opacity: 0.7;
+        transition-duration: 200ms;
+}
+.library .lib-right .arrow-icon:hover{
+    opacity: 1;
+    transform: scale(1.03);
+}
+.side-bar .sidebar-card {
+        background-color: rgb(31, 31, 31);
+        color: white;
+        width: 22rem;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        margin: 0.5rem 0.5rem;
+        padding: 1rem 1.25rem 1rem 0.95rem;
+        line-height: 1.5rem;
+        margin-bottom: 1rem;
+        border-radius: 0.5rem;
+}
+.side-bar .sidebar-card button {
+        margin-top: 1rem;
+        padding: 0.5rem 1rem 0.5rem 1rem;
+        border-radius: 3rem;
+        border: none;
+        font-weight: bold;
+}
+.side-bar .sidebar-card button:hover{
+    transform: scale(1.03);
+    cursor: pointer;
+}
+.main-content .content-navigation{
+    display: flex;
+    min-height: 4rem;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.25rem 1rem;
+    position: sticky;
+    top: 0px;
+    background: linear-gradient(
+        to bottom,
+        rgb(31,31,31),
+        rgb(25,25,25)
+    );
+    z-index: 2;
+}
+.main-content .content-navigation button{
+    background-color: rgb(55, 54, 54);
+    color: white;
+    font-weight: normal;
+    border: none;
+    border-radius: 4rem;
+    padding: 0.25rem 0.75rem;
+}
+.main-content .content-navigation button:hover{
+    background-color: rgb(64, 64, 64);
+    cursor: pointer;
+}
+.main-content .recommended-songs{
+    height: 17.5rem;
+    border: pink 2px solid;
+}
+.main-content .cards-section{
+    display: flex;
+    flex-direction: column;
+    padding: 0.25rem 0.75rem;
+    min-height: 20rem;
+}
+.main-content .cards-section .section-header{
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-content .cards-section .section-header h2{
+    font-size: 1.5rem;
+}
+.main-content .cards-section .section-header h2:hover{
+    text-decoration: underline white;
+}
+.main-content .cards-section .section-header p:hover{
+    text-decoration: underline white;
+}
+.main-content .cards-section .cards-container{
+    overflow-x: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+.cards-section .cards-container .card{
+    min-width: 11.25rem;
+    height: 13.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    padding: 0.75rem;
+}
+.cards-section .cards-container .card:hover{
+    cursor: pointer;
+    background-color: rgb(31, 31, 31);
+}
+.cards-section .cards-container .card img{
+    height: 10rem;
+    width: 100%;
+    border-radius: 1rem;
+}
+.cards-section .cards-container .card p{
+    font-weight: lighter;
+    font-size: 0.8rem;
+}
+.main-content .about-us{
+    min-height: 22rem;
+    display: flex;
+    padding: 3rem 2rem 1rem 2rem;
+    text-align: start;
+}
+.about-us .list-header{
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
+.about-us ul li{
+    opacity: 0.7;
+    padding-bottom: 1rem;
+    padding-right: 0.3rem;
+}
+.about-us ul li:hover{
+    text-decoration: underline;
+    opacity: 1;
+    cursor: pointer;
+}
+.main-content .about-us .about-us-list{
+    padding: 0 0.5rem 0rem 0rem;
+    min-height: 20rem;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.7);
+}
+.main-content .about-us .brands{
+    width: 9.5rem;
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.7);
+    min-height: 20rem;
+}
+.about-us .brands .brand-icon{
+    height: 2.5rem;
+    width: 2.5rem;
+    background-color: rgb(41, 41, 41);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-us .brands .brand-icon:hover{
+    background-color: rgb(114, 114, 114);
+    cursor: pointer;
+}
+.communities , .spotify-plans , .useful-links, .company{
+    flex: 1;
+}
+
+.main-content .footer{
+    min-height: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 2rem 4.5rem 2rem;
+    align-items: center;
+    font-size: 80%;
+    color: rgba(255, 255, 255, 0.7);
+}
+.main-content .footer p:hover{
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+}
+.music-player .music-controls{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.forward img, .backward img, .shuffle img, .repeat img{
+    height: 1rem;
+    width: 1rem;
+    padding: 0.5rem;
+    opacity: 0.7;
+}
+.forward img:hover, .backward img:hover, .shuffle img:hover, .repeat img:hover, .play-pause img:hover{
+    opacity: 1;
+    cursor: pointer;
+    transform: scale(1.03);
+}
+.play-pause img{
+    height: 2rem;
+    width: 2rem;
+    opacity: 0.7;
+    margin: 0rem 1rem;
+}
+.music-player .timeline{
+    width: 23.5rem;
+    min-height: 0.25rem;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+.music-player .timeline:hover{
+    background-color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+}

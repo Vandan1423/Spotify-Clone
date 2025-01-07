@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="main">
+        <div class="nav-bar">
+            <div class="nav-left">
+                <div class="spotify-logo">
+                    <img src="./asset/logo.png" alt="">
+                </div>
+                <div class="home-icon">
+                    <i class="fa-solid fa-home"></i>
+                </div>
+                <div class="search-box">
+                    <div class="search-icon">
+                        <i class="fa-solid fa-search"></i>
+                    </div>
+                    <div class="search-area">
+                        <input type="text" id="search-area" placeholder="What do you want to play?">
+                    </div>
+                </div>
+            </div>
+            <div class="nav-right">
+                <div class="explore-premium-btn">
+                    <button>Explore Premium</button>
+                </div>
+                <div class="install-app-btn">
+                    <button><i class="fa-solid fa-download"></i> Install app</button>
+                </div>
+                <div class="notification-icon">
+                    <i class="fa-regular fa-bell"></i>
+                </div>
+                <div class="user-icon">
+                    <div class="user-first-letter">P</div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="side-bar">
+                <div class="library">
+                    <div class="lib-left">
+                        <img src="./asset/library_icon.png" alt="">
+                        <p>Your Library</p>
+                    </div>
+                    <div class="lib-right">
+                        <div class="plus-icon">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                        <div class="arrow-icon">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-card" id="playlist-card">
+                    <h4>Create your first playlist</h4>
+                    <p>It's easy, we'll help you</p>
+                    <button>Create Playlist</button>
+                </div>
+                <div class="sidebar-card" id="podcast-card">
+                    <h4>Let's find some podcasts to follow</h4>
+                    <p>We'll keep you updated on new episodes</p>
+                    <button>Browse Podcasts</button>
+                </div>
+            </div>
+            <div class="main-content">
+                <div class="content-navigation">
+                    <a href="#"><button>All</button></a>
+                    <a href="#"><button>Music</button></a>
+                    <a href="#"><button>Podcasts</button></a>
+                </div>
+                <div class="cards-section" id="recommended-songs">
+                    <div class="section-header">
+                        <h2>Recommended for you</h2>
+                        <p>Show all</p>
+                    </div>
+                    <div class="cards-container">
+                        <div class="card">
+                            <img src="./asset/card2img.jpeg" alt="">
+                            <p>Explore the finnest set of high quality music in.....</p>
+                        </div>
+                        <div class="card">
+                            <img src="./asset/card3img.jpeg" alt="">
+                            <p>Explore the finnest set of high quality music in.....</p>
+                        </div>
+                        <div class="card">
+                            <img src="./asset/card4img.jpeg" alt="">
+                            <p>Explore the finnest set of high quality music in.....</p>
+                        </div>
+                        <div class="card">
+                            <img src="./asset/card6img.jpeg" alt="">
+                            <p>Explore the finnest set of high quality music in.....</p>
+                        </div>
+                        <div class="card">
+                            <img src="./asset/card7img.jpg" alt="">
+                            <p>Explore the finnest set of high quality music in.....</p>
+                        </div>
+                        <div class="card">
+                            <img src="./asset/card8img.jpg" alt="">
+                            <p>Explore the finnest set of high quality music in.....</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards-section" id="charts">
+                    <div class="section-header">
+                        <h2>Featured charts</h2>
+                        <p>Show all</p>
+                    </div>
+                    <div class="cards-container">
+                        <div class="card">
+                            <img src="./asset/card1img.jpeg" alt="">
+                            <p>Explore the finnest set of high quality music in.....</p>
+                        </div>
+                        <div class="card">
+                            <img src="./asset/card5img.jpeg" alt="">
+                            <p>Explore the finnest set of high quality music in.....</p>
+                        </div>
+                        <div class="card">
+                            <img src="./asset/card11img.jpg" alt="">
+                            <p>Explore the finnest set of high quality music in.....</p>
+                        </div>
+                        <div class="card">
+                            <img src="./asset/card12img.jpg" alt="">
+                            <p>Explore the finnest set of high quality music in.....</p>
+                        </div>
+                        <div class="card">
+                            <img src="./asset/card13img.jpg" alt="">
+                            <p>Explore the finnest set of high quality music in.....</p>
+                        </div>
+                        <div class="card">
+                            <img src="./asset/card14img.jpg" alt="">
+                            <p>Explore the finnest set of high quality music in.....</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards-section" id="shows">
+                    <div class="section-header">
+                        <h2>Shows to try</h2>
+                        <p>Show all</p>
+                    </div>
+                    <div class="cards-container">
+                        <div class="card">
+                            <img src="./asset/card15img.png" alt="">
+                            <p>Explore the finnest set of high quality music in.....</p>
+                        </div>
+                        <div class="card">
+                            <img src="./asset/card16img.png" alt="">
+                            <p>Explore the finnest set of high quality music in.....</p>
+                        </div>
+                        <div class="card">
+                            <img src="./asset/card17img.png" alt="">
+                            <p>Explore the finnest set of high quality music in.....</p>
+                        </div>
+                        <div class="card">
+                            <img src="./asset/card18img.png" alt="">
+                            <p>Explore the finnest set of high quality music in.....</p>
+                        </div>
+                        <div class="card">
+                            <img src="./asset/card19img.png" alt="">
+                            <p>Explore the finnest set of high quality music in.....</p>
+                        </div>
+                        <div class="card">
+                            <img src="./asset/card20img.png" alt="">
+                            <p>Explore the finnest set of high quality music in.....</p>
+                        </div>
+                        <div class="card">
+                            <img src="./asset/card21img.png" alt="">
+                            <p>Explore the finnest set of high quality music in.....</p>
+                        </div>
+                        <div class="card">
+                            <img src="./asset/card22img.png" alt="">
+                            <p>Explore the finnest set of high quality music in.....</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-us">
+                    <div class="company about-us-list">
+                        <p class="list-header">Company</p>
+                        <ul>
+                            <li>About</li>
+                            <li>Jobs</li>
+                            <li>For the Record</li>
+                        </ul>
+                    </div>
+                    <div class="communities about-us-list">
+                        <p class="list-header">Communities</p>
+                        <ul>
+                            <li>For Artists</li>
+                            <li>Developers</li>
+                            <li>Advertising</li>
+                            <li>Investors</li>
+                            <li>Vendors</li>
+                        </ul>
+                    </div>
+                    <div class="useful-links about-us-list">
+                        <p class="list-header">Useful links</p>
+                        <ul>
+                            <li>Support</li>
+                            <li>Free Mobile</li>
+                            <li>App</li>
+                        </ul>
+                    </div>
+                    <div class="spotify-plans about-us-list">
+                        <p class="list-header">Spotify Plans</p>
+                        <ul>
+                            <li>Premium Individual</li>
+                            <li>Premium Duo</li>
+                            <li>Premium Family</li>
+                            <li>Premium Student</li>
+                            <li>Spotify Free</li>
+                        </ul>
+                    </div>
+                    <div class="brands">
+                        <div class="instagram brand-icon">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                        <div class="twitter brand-icon">
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                        <div class="facebook brand-icon">
+                            <i class="fa-brands fa-facebook"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer">
+                    <p>Legal</p>
+                    <p>Safety & Privary Center</p>
+                    <p>Privacy Policy</p>
+                    <p>Cookie</p>
+                    <p>About Ads</p>
+                    <p>Accessiblity</p>
+                    <p>&#169; 2024 Spotify AB</p>
+                </div>
+            </div>
+        </div>
+        <div class="music-player">
+                <div class="music-controls">
+                    <div class="shuffle">
+                        <img src="./asset/player_icon1.png" alt="">
+                    </div>
+                    <div class="backward">
+                        <img src="./asset/player_icon2.png" alt="">
+                    </div>
+                    <div class="play-pause">
+                        <img src="./asset/player_icon3.png" alt="">
+                    </div>
+                    <div class="forward">
+                        <img src="./asset/player_icon4.png" alt="">
+                    </div>
+                    <div class="repeat">
+                        <img src="./asset/player_icon5.png" alt="">
+                    </div>
+                </div>
+                <div class="timeline"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
